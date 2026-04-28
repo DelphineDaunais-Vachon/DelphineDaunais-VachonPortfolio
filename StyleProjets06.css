@@ -1,0 +1,158 @@
+/* Reset et bases */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; 
+    line-height: 1.4;
+    color: #000;
+    background-color: #fff;
+    overflow: hidden; /* Bloque le scroll vertical pour laisser le JS agir */
+}
+
+/* Navigation fixe */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9); /* Léger fond pour la lisibilité */
+}
+
+.team-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-link:hover, nav a:hover {
+    color: #f980c6;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Galerie Horizontale */
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto; /* Nécessaire pour le scrollLeft en JS */
+}
+
+/* Pour cacher la barre de défilement tout en gardant le scroll */
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    flex-shrink: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px; /* Évite que l'image touche la navbar */
+}
+
+.item img {
+    height: auto; 
+    max-height: 100vh; /* Empêche l'image de dépasser en hauteur */
+}
+
+        .Couverture00 { width: 100vw; }
+        .item.Couverture00 img { width: 340px; }
+        .Page01 { width: 100vw; }
+        .item.Page01 img { width: 680px; }
+        .Page02 { width: 100vw; }
+        .item.Page02 img { width: 1360px; }
+        .Page03 { width: 100vw; }
+        .item.Page03 img { width: 350px; }
+        .Page04 { width: 100vw; }
+        .item.Page04 img { width: 350px; }
+        .Page05 { width: 100vw; }
+        .item.Page05 img { width: 350px; }
+        .Page06 { width: 100vw; }
+        .item.Page06 img { width: 350px; }
+        .Page07 { width: 100vw; }
+        .item.Page07 img { width: 350px; }
+        .Page08 { width: 100vw; }
+        .item.Page08 img { width: 350px; }
+        .Page09 { width: 100vw; }
+        .item.Page09 img { width: 350px; }
+        .Page10 { width: 100vw; }
+        .item.Page10 img { width: 350px; }
+        .Page11 { width: 100vw; }
+        .item.Page11 img { width: 350px; }
+        .Page12 { width: 100vw; }
+        .item.Page12 img { width: 350px; }
+        .Page13 { width: 100vw; }
+        .item.Page13 img { width: 350px; }
+        .Page14 { width: 100vw; }
+        .item.Page14 img { width: 350px; }
+        .Page15 { width: 100vw; }
+        .item.Page15 img { width: 350px; }
+        .Page16 { width: 100vw; }
+        .item.Page16 img { width: 350px; }
+        .Page17 { width: 100vw; }
+        .item.Page17 img { width: 350px; }
+        .Page18 { width: 100vw; }
+        .item.Page18 img { width: 350px; }
+        .Page19 { width: 100vw; }
+        .item.Page19 img { width: 350px; }
+        .Page20 { width: 100vw; }
+        .item.Page20 img { width: 350px; }
+        .Page21 { width: 100vw; }
+        .item.Page21 img { width: 350px; }
+        .Page22 { width: 100vw; }
+        .item.Page22 img { width: 350px; }
+        .Page23 { width: 100vw; }
+        .item.Page23 img { width: 350px; }
+        .Page24 { width: 100vw; }
+        .item.Page24 img { width: 350px; }
+        .Page25 { width: 100vw; }
+        .item.Page25 img { width: 350px; }
+        .Page26 { width: 100vw; }
+        .item.Page26 img { width: 350px; }
+        .Page27 { width: 100vw; }
+        .item.Page27 img { width: 350px; }
+        .Page28 { width: 100vw; }
+        .item.Page28 img { width: 350px; }
+        .Page29 { width: 100vw; }
+        .item.Page29 img { width: 350px; }
+        .Page30 { width: 100vw; }
+        .item.Page30 img { width: 350px; }
+
+
+.projet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item img {
+    width: auto;
+    max-width: 500px; /* Tu peux changer la taille ici */
+    max-height: 70vh;
+    height: auto;     /* IMPORTANT : empêche l'aspect écrasé */
+}
+
+.texte-projet {
+    margin-top: 15px;
+    font-size: small;
+}
