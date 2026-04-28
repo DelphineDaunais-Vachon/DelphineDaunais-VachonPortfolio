@@ -1,0 +1,106 @@
+/* Reset et bases */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; 
+    line-height: 1.4;
+    color: #000;
+    background-color: #fff;
+    overflow: hidden; /* Bloque le scroll vertical pour laisser le JS agir */
+}
+
+/* Navigation fixe */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9); /* Léger fond pour la lisibilité */
+}
+
+.team-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-link:hover, nav a:hover {
+    color: #f980c6;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Galerie Horizontale */
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto; /* Nécessaire pour le scrollLeft en JS */
+}
+
+/* Pour cacher la barre de défilement tout en gardant le scroll */
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    flex-shrink: 0;
+    flex: 0 0 60vw; /* largeur constante */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px; /* Évite que l'image touche la navbar */
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    gap: 10vw; /* espace constant entre items */
+    padding: 0 19vw; /* espace début + fin */
+}
+
+.item:first-child {
+    margin-left: 0vw;
+}
+
+.item img {
+    height: auto; 
+    max-height: 100vh; /* Empêche l'image de dépasser en hauteur */
+}
+
+.projet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item img {
+    width: auto;
+    max-width: 500px; /* Tu peux changer la taille ici */
+    max-height: 70vh;
+    height: auto;     /* IMPORTANT : empêche l'aspect écrasé */
+}
+
+.texte-projet {
+    margin-top: 15px;
+    font-size: small;
+}
