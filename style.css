@@ -1,0 +1,201 @@
+/* Reset basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.team-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: none; /* Enlève le soulignement */
+    color: inherit;        /* Prend la couleur du texte parent (noir) */
+    display: block;        /* Permet au lien de se comporter comme une div */
+}
+
+.team-link:hover {
+    color: #f980c6;
+    cursor: default;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; 
+    line-height: 1.4;
+    color: #000;
+    background-color:#fff;
+    padding: 20px;
+    padding-top: 80px; /* Espace pour le menu fixe */
+}
+
+/* Header & Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: none;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: medium;
+}
+
+nav a:hover {
+    color: #f980c6;
+    cursor: default;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.gallery-section {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center;    /* Centre les éléments horizontalement */
+    gap: 60px;              /* Espace entre chaque ligne d'image */
+}
+
+.texte-projet {
+    color: black;
+    font-size: 13.5px;
+}
+
+.projet-container:hover .texte-projet {
+    color: #f980c6; 
+    cursor: default;
+}
+
+.projet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 540px; /* même hauteur pour tous */
+}
+
+.projet-container:first-child {
+    margin-top: 18px; /* ajuste comme tu veux */
+}
+
+.projet-container a {
+    cursor: default;
+  }
+
+.site-footer {
+    background-color: none; /* Fond blanc */
+    padding: 25px 0;           /* Espacement interne (haut et bas) */
+    width: 100%;               /* Prend toute la largeur */
+    margin-top: 0px;          /* Espace entre la galerie et le footer */
+}
+
+/* Responsive */
+@media (max-width: 40px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 10px; /* juste sous "Index" */
+    right: 0;
+    background: none;
+    list-style: none;
+    padding: 20px 0;
+    border: none;
+    min-width: 400px;
+    z-index: 1000;
+    text-align: end;
+}
+
+.dropdown-menu li {
+    list-style: none; /* enlève le point */
+    padding-left: 0;  /* enlève le décalage */
+    padding: 0px 0px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 13.5px;
+}
+
+.dropdown-menu a:hover {
+    color: #f980c6;
+}
+
+.dropdown-text {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+
+    min-width: 270px;
+
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+
+    box-sizing: border-box;
+
+    scrollbar-width: none; /* Firefox */
+
+    pointer-events: auto;
+}
+
+.dropdown-text::-webkit-scrollbar {
+    display: none; /* Chrome / Safari */
+}
+
+
+.dropdown-text p:hover {
+    cursor: default;
+}
+
+.ptexte {
+    margin: 0;
+    font-size: 13.5px;
+    color: black;
+    text-align: justify;
+}
+
+.ptexte2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 13.5px;
+    color: black;
+    text-align: justify;
+}
+
+.cvtitre{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 13.5px;
+    text-align: justify;
+}
+
